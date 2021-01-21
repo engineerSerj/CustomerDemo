@@ -23,12 +23,10 @@ spring.datasource.driver-class-name=com.mysql.jdbc.Driver - driver
 spring.jpa.database=mysql - database type
 spring.jpa.database-platform=org.hibernate.dialect.MySQL5Dialect - dialect
 
+2. cd customerdemo
+3. mvn spring-boot:run
 
-2. git clone https://github.com/proselytear/customerdemo
-3. cd customerdemo
-4. mvn spring-boot:run
-
-5. Access CustomerService using next REST requests:
+4. Access CustomerService using next REST requests:
 
 GET: localhost:9966/api/v1/customers/ - get all customers
 GET: localhost:9966/api/v1/customers/1 - get customer with ID 1
